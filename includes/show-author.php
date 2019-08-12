@@ -12,7 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Check to see if author archive page should be disabled for 10up user accounts
+ * Check to see if author archive page should be disabled for Leap Spark user accounts
  */
 function maybe_disable_author_archive() {
 
@@ -23,7 +23,7 @@ function maybe_disable_author_archive() {
 	$is_author_disabled = false;
 	$author             = get_queried_object();
 	$current_domain     = wp_parse_url( get_site_url(), PHP_URL_HOST );
-	// Domain names that are whitelisted allowed to index 10up users to be indexed
+	// Domain names that are whitelisted allowed to index leap spark users to be indexed
 	$whitelisted_domains = [];
 	// Perform partial match on domains to catch subdomains or variation of domain name
 	$filtered_domains = array_filter(
@@ -36,7 +36,7 @@ function maybe_disable_author_archive() {
 	if ( ! empty( $filtered_domains ) || empty( $author->data->user_email ) ) {
 		return;
 	}
-	// E-mail addresses containing 10up.com (get10up.com inclusive) will be filtered out on the front-end
+	// E-mail addresses containing leapsparkagency.com will be filtered out on the front-end
 	if ( false !== stripos( $author->data->user_email, 'leapsparkagency.com' ) ) {
 		$is_author_disabled = true;
 	}
