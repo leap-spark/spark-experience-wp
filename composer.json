@@ -1,0 +1,23 @@
+{
+  "name": "leap-spark/spark-experience",
+  "description": "The Spark Experience configures WordPress in a consistent and dependable way.",
+  "type": "wordpress-plugin",
+  "require": {
+    "php": ">7.0"
+  },
+  "require-dev": {
+    "10up/phpcs-composer": "dev-master"
+  },
+  "scripts": {
+    "lint": "phpcs .",
+    "lint-fix": "phpcbf ."
+  },
+  "license": "gpl-2.0-only",
+  "authors": [
+    {
+      "name": "Aaron Arney",
+      "email": "aarney@leapsparkagency.com"
+    }
+  ],
+  "minimum-stability": "dev"
+}
