@@ -23,8 +23,8 @@ if ( ! defined( 'DISALLOW_FILE_EDIT' ) ) {
  *
  * @return WP_User|WP_Error
  */
-function prevent_weak_password_auth( WP_User $user, string $username, string $password ) {
-	$test_tlds = array( 'test', 'dev', 'local', '' );
+function prevent_weak_password_auth( $user, string $username, string $password ) {
+	$test_tlds = array( 'test', 'dev', 'local', 'localhost' );
 	$tld       = preg_replace( '#^.*\.(.*)$#', '$1', wp_parse_url( site_url(), PHP_URL_HOST ) );
 
 	if ( ! in_array( $tld, $test_tlds, true ) && in_array( strtolower( trim( $password ) ), weak_passwords(), true ) ) {
