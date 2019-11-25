@@ -30,18 +30,20 @@ add_action( 'login_enqueue_scripts', function () {
 
 	wp_enqueue_style( 'spark-login-style', plugin_dir_path( __DIR__ ) . 'css/login-style.css', '', SPARK_EXPERIENCE_VERSION );
 
-	$logo = get_theme_mod( 'login_logo' );
-	$page_background_color = get_theme_mod( 'login_page_background_color' );
+	$s = function ( $value ) {
+		return wp_strip_all_tags( $value );
+	};
 
-	$form_label_color = get_theme_mod( 'login_form_text_color' );
-	$form_background_color = get_theme_mod( 'login_form_background_color' );
-
-	$button_background_color = get_theme_mod( 'login_form_button_color' );
-	$button_background_hover_color = get_theme_mod( 'login_form_button_hover_color' );
-	$button_text_color = get_theme_mod( 'login_form_button_text_color' );
-	$button_text_hover_color = get_theme_mod( 'login_form_button_text_hover_color' );
-	$button_border_color = get_theme_mod( 'login_form_button_border_color' );
-	$button_border_hover_color = get_theme_mod( 'login_form_button_hover_border_color' );
+	$logo                           = $s( get_theme_mod( 'login_logo' ) ?? '' );
+	$page_background_color          = $s( get_theme_mod( 'login_page_background_color' ) ?? '' );
+	$form_label_color               = $s( get_theme_mod( 'login_form_text_color' ) ?? '' );
+	$form_background_color          = $s( get_theme_mod( 'login_form_background_color' ) ?? '' );
+	$button_background_color        = $s( get_theme_mod( 'login_form_button_color' ) ?? '' );
+	$button_background_hover_color  = $s( get_theme_mod( 'login_form_button_hover_color' ) ?? '' );
+	$button_text_color              = $s( get_theme_mod( 'login_form_button_text_color' ) ?? '' );
+	$button_text_hover_color        = $s( get_theme_mod( 'login_form_button_text_hover_color' ) ?? '' );
+	$button_border_color            = $s( get_theme_mod( 'login_form_button_border_color' ) ?? '' );
+	$button_border_hover_color      = $s( get_theme_mod( 'login_form_button_hover_border_color' ) ?? '' );
 
 	$style = "
 			body {
