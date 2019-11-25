@@ -3,7 +3,7 @@
  * Plugin Name: Spark Experience
  * Plugin URI: https://leapsparkagency.com
  * Description: Enhance WordPress,the LEAP Spark way!
- * Version: 1.0.0
+ * Version: 1.1.0
  * Author: LEAP Spark
  * Author URI: https://leapsparkagency.com
  * License: GPL2
@@ -25,7 +25,7 @@ if ( ! defined( 'WPINC' ) ) {
  * Start at version 1.0.0 and use SemVer - https://semver.org
  * Rename this for your plugin and update it as you release new versions.
  */
-define( 'SPARK_EXPERIENCE_VERSION', '1.0.0' );
+define( 'SPARK_EXPERIENCE_VERSION', '1.1.0' );
 
 require_once __DIR__ . '/includes/cleanup.php';
 require_once __DIR__ . '/includes/security.php';
