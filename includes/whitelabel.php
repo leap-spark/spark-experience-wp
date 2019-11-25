@@ -1,84 +1,79 @@
 <?php
-/**
- * White label WordPress a little bit.
- *
- * @package Spark_Experience
- */
 
-namespace Spark_Experience;
+// Hide the WordPress logo from the admin bar
+add_action(
+	'wp_before_admin_bar_render',
+	function () {
+		global $wp_admin_bar;
+		$wp_admin_bar->remove_menu( 'wp-logo' );
+	}
+);
 
-/**
- * Execute white label stuff.
- */
-function white_label() {
-	// Hide the WordPress logo from the admin bar
-	add_action(
-		'wp_before_admin_bar_render',
-		function () {
-			global $wp_admin_bar;
-			$wp_admin_bar->remove_menu( 'wp-logo' );
-		}
-	);
+// Change WordPress login page logo link
+add_filter(
+	'login_headertext',
+	function () {
+		return 'https://leapsparkagency.com';
+	}
+);
 
-	// Change WordPress login page logo link
-	add_filter(
-		'login_headertext',
-		function () {
-			return 'https://leapsparkagency.com';
-		}
-	);
+// Remove WordPress link from admin footer
+add_filter(
+	'admin_footer_text',
+	function () {
+		return '';
+	}
+);
 
-	// Remove WordPress link from admin footer
-	add_filter(
-		'admin_footer_text',
-		function () {
-			return '';
-		}
-	);
+// Change the look and feel of the login page
+add_action( 'login_enqueue_scripts', function () {
 
-	// Change the look and feel of the login page
-	add_action(
-		'login_head',
-		function () {
-			?>
-		<style type="text/css">
+	wp_enqueue_style( 'spark-login-style', plugin_dir_path( __DIR__ ) . 'css/login-style.css', '', SPARK_EXPERIENCE_VERSION );
+
+	$logo = get_theme_mod( 'login_logo' );
+	$page_background_color = get_theme_mod( 'login_page_background_color' );
+
+	$form_label_color = get_theme_mod( 'login_form_text_color' );
+	$form_background_color = get_theme_mod( 'login_form_background_color' );
+
+	$button_background_color = get_theme_mod( 'login_form_button_color' );
+	$button_background_hover_color = get_theme_mod( 'login_form_button_hover_color' );
+	$button_text_color = get_theme_mod( 'login_form_button_text_color' );
+	$button_text_hover_color = get_theme_mod( 'login_form_button_text_hover_color' );
+	$button_border_color = get_theme_mod( 'login_form_button_border_color' );
+	$button_border_hover_color = get_theme_mod( 'login_form_button_hover_border_color' );
+
+	$style = "
 			body {
-				background: #fff;
+				background: {$page_background_color};
 			}
 
 			.login form {
-				background: #f8cb16;
+				background: {$form_background_color};
 			}
 
 			.login form label {
-				color: #101010;
+				color: {$form_label_color};
 			}
 
 			.login h1 a {
-				background-image: url(
-				<?php
-				echo esc_url( plugins_url( '/assets/img/leap-spark-logo.jpg', dirname( __FILE__ ) ) );
-				?>
-				);
+				background-image: url('{$logo}');
 				background-size: 250px;
 				margin: 0 auto;
-				height: 50px;
 				width: 320px;
 			}
 
 			.wp-core-ui .button-primary {
-				background: #26d77f;
-				border-color: #0fb060;
+				background: {$button_background_color};
+				border-color: {$button_border_color};
+				color: {$button_text_color};
 			}
 
 			.wp-core-ui .button-primary:hover {
-				background: #0fb060;
-				border-color: #0fb060;
-			}
-		</style>
-			<?php
-		}
-	);
-}
+				background: {$button_background_hover_color};
+				border-color: {$button_border_hover_color};
+				color: {$button_text_hover_color};
+			}";
 
-white_label();
+	wp_add_inline_style( 'spark-login-style',	$style );
+} );
