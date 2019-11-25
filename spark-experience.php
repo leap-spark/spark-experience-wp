@@ -30,6 +30,7 @@ define( 'SPARK_EXPERIENCE_VERSION', '1.1.0' );
 require_once __DIR__ . '/includes/cleanup.php';
 require_once __DIR__ . '/includes/security.php';
 require_once __DIR__ . '/includes/show-author.php';
+require_once __DIR__ . '/includes/performance.php';
 require_once __DIR__ . '/includes/show-template.php';
 require_once __DIR__ . '/includes/customizer.php';
 require_once __DIR__ . '/includes/whitelabel.php';
