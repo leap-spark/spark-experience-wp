@@ -13,19 +13,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 	die;
 }
 
-
-/**
- * Remove the WordPress version from appearing in RSS feeds and Head
- *
- * @return string
- */
-function remove_wp_version() {
-	return '';
-}
-add_filter( 'the_generator', __NAMESPACE__ . '\\remove_wp_version' );
-remove_action( 'wp_head', 'wp_generator' );
-
-
 /**
  * Cleanup the <head> of the website.
  */
