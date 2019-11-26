@@ -15,6 +15,8 @@
 
 namespace Spark_Experience;
 
+use Puc_v4_Factory;
+
 // If this file is called directly, abort.
 if ( ! defined( 'WPINC' ) ) {
 	die;
@@ -34,3 +36,11 @@ require_once __DIR__ . '/includes/performance.php';
 require_once __DIR__ . '/includes/show-template.php';
 require_once __DIR__ . '/includes/customizer.php';
 require_once __DIR__ . '/includes/whitelabel.php';
+require_once __DIR__ . '/plugin-update-checker/plugin-update-checker.php';
+
+
+Puc_v4_Factory::buildUpdateChecker(
+	'https://github.com/leap-spark/spark-experience-wp',
+	__FILE__,
+	'spark-experience-plugin'
+);
