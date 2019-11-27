@@ -1,5 +1,10 @@
 <?php
 
+if ( ! defined( 'WPINC' ) ) {
+	die;
+}
+
+
 /**
  * ======== What's This? ========
  * Create a new section in the customizer for the Login from/screen.

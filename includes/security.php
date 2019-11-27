@@ -10,12 +10,18 @@ namespace Spark_Experience;
 use WP_Error;
 use WP_User;
 
+if ( ! defined( 'WPINC' ) ) {
+	die;
+}
+
 if ( ! defined( 'DISALLOW_FILE_EDIT' ) ) {
 	define( 'DISALLOW_FILE_EDIT', true );
 }
 
 /**
- * Prevent users from authenticating if they are using a weak password
+ * Prevent users from authenticating if they are using a weak password. This function was taken from 10up Experience.
+ *
+ * @source https://github.com/10up/10up-experience/blob/develop/includes/authentication.php
  *
  * @param WP_User $user User object
  * @param string  $username Username
