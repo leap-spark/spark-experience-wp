@@ -1,0 +1,163 @@
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Project-Id-Version: Spark Experience\n"
+"POT-Creation-Date: 2019-11-27 16:50-0500\n"
+"PO-Revision-Date: 2019-11-27 16:52-0500\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.4\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: spark-experience.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Last-Translator: \n"
+"Language: es_MX\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: includes/customizer.php:20
+#, fuzzy
+msgid "Login Form Style"
+msgstr "Estilo de formulario de inicio de sesión"
+
+#: includes/customizer.php:22
+#, fuzzy
+msgid "Customize the login form that your admins and members see when logging in."
+msgstr "Personalice el formulario de inicio de sesión que ven los administradores y los miembros al iniciar sesión."
+
+#: includes/customizer.php:32
+msgid "Upload Logo"
+msgstr "Subir Logo"
+
+#: includes/customizer.php:44
+msgid "Form Background Color"
+msgstr "Color de Fondo del Formulario"
+
+#: includes/customizer.php:52
+#, fuzzy
+msgid "Form Text Color"
+msgstr "Color del texto del formulario"
+
+#: includes/customizer.php:64
+msgid "Button Color"
+msgstr "Color del botón"
+
+#: includes/customizer.php:72
+#, fuzzy
+msgid "On Hover: Button Color"
+msgstr "Al pasar el ratón: Color del botón"
+
+#: includes/customizer.php:81
+msgid "Button Text Color"
+msgstr "Color del texto del botón"
+
+#: includes/customizer.php:89
+#, fuzzy
+msgid "On Hover: Button Text Color"
+msgstr "Al pasar el ratón: Color del texto del botón"
+
+#: includes/customizer.php:98
+msgid "Button Border Color"
+msgstr "Color del borde del botón"
+
+#: includes/customizer.php:106
+#, fuzzy
+msgid "On Hover: Button Border Color"
+msgstr "Al pasar el ratón: Color del borde del botón"
+
+#: includes/customizer.php:118
+msgid "Page Background Color"
+msgstr "Color de fondo de la página"
+
+#: includes/security.php:41
+msgid "Please"
+msgstr "Por favor"
+
+#: includes/security.php:43
+#, fuzzy
+msgid "reset your password"
+msgstr "restablecer su contraseña"
+
+#: includes/security.php:44
+#, fuzzy
+msgid "in order to meet current security measures."
+msgstr "para cumplir con las medidas de seguridad actuales."
+
+#: includes/show-template.php:58
+#, fuzzy
+msgid "Theme name: "
+msgstr "Nombre del tema:"
+
+#: includes/show-template.php:58
+#, fuzzy
+msgid "NOT a child theme"
+msgstr "NO un tema infantil"
+
+#: includes/show-template.php:78
+msgid "Template:"
+msgstr "Plantilla:"
+
+#: plugin-update-checker/Puc/v4p8/Plugin/Ui.php:54
+msgid "View details"
+msgstr "Ver Detalles"
+
+#: plugin-update-checker/Puc/v4p8/Plugin/Ui.php:77
+#, fuzzy, php-format
+msgid "More information about %s"
+msgstr "Más información sobre %s"
+
+#: plugin-update-checker/Puc/v4p8/Plugin/Ui.php:128
+msgid "Check for updates"
+msgstr "Checar por Actualizaciones"
+
+#: plugin-update-checker/Puc/v4p8/Plugin/Ui.php:213
+#, php-format
+msgctxt "the plugin title"
+msgid "The %s plugin is up to date."
+msgstr "El plugin %s está actualizado."
+
+#: plugin-update-checker/Puc/v4p8/Plugin/Ui.php:215
+#, php-format
+msgctxt "the plugin title"
+msgid "A new version of the %s plugin is available."
+msgstr "Una nueva versión del plugin %s está disponible."
+
+#: plugin-update-checker/Puc/v4p8/Plugin/Ui.php:217
+#, fuzzy, php-format
+msgctxt "the plugin title"
+msgid "Could not determine if updates are available for %s."
+msgstr "No se pudo determinar si las actualizaciones están disponibles para %s."
+
+#: plugin-update-checker/Puc/v4p8/Plugin/Ui.php:223
+#, php-format
+msgid "Unknown update checker status \"%s\""
+msgstr "Status de actualización desconocido \"%s\""
+
+#: plugin-update-checker/Puc/v4p8/Vcs/PluginUpdateChecker.php:98
+msgid "There is no changelog available."
+msgstr "No está disponible la lista de cambios."
+
+#. Plugin Name of the plugin/theme
+#, fuzzy
+msgid "Spark Experience"
+msgstr "Experiencia Spark"
+
+#. Plugin URI of the plugin/theme
+#. Author URI of the plugin/theme
+#, fuzzy
+msgid "https://leapsparkagency.com"
+msgstr "https://leapsparkagency.com"
+
+#. Description of the plugin/theme
+#, fuzzy
+msgid "Enhance WordPress,the LEAP Spark way!"
+msgstr "¡Mejora WordPress, la forma LEAP Spark!"
+
+#. Author of the plugin/theme
+#, fuzzy
+msgid "LEAP Spark"
+msgstr "LEAP Spark"
