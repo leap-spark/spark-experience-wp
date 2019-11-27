@@ -7,6 +7,8 @@
 
 namespace Spark_Experience;
 
+use function wp_safe_redirect;
+
 if ( ! defined( 'ABSPATH' ) ) {
 	die;
 }
@@ -40,8 +42,9 @@ function maybe_disable_author_archive() {
 	if ( false !== stripos( $author->data->user_email, 'leapsparkagency.com' ) ) {
 		$is_author_disabled = true;
 	}
+
 	if ( true === $is_author_disabled ) {
-		\wp_safe_redirect( '/', '301' );
+		wp_safe_redirect( '/', '301' );
 		exit();
 	}
 }
