@@ -1,13 +1,13 @@
 <?php
 /**
  * Plugin Name: Spark Experience
- * Plugin URI: https://leapsparkagency.com
+ * Plugin URI: https://github.com/leap-spark/spark-experience-wp
  * Description: Enhance WordPress,the LEAP Spark way!
- * Version: 1.3.1
+ * Version: 1.3.2
  * Author: LEAP Spark
  * Author URI: https://leapsparkagency.com
  * License: GPL2
- * Text Domain: leapspark
+ * Text Domain: spark-experience
  * Domain Path: /languages/
  *
  * @package Spark_Experience
