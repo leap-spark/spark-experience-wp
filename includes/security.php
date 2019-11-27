@@ -40,8 +40,8 @@ function prevent_weak_password_auth( $user, string $username, string $password )
 				'%s <a href="%s">%s</a> %s',
 				__( 'Please', 'leapspark' ),
 				esc_url( wp_lostpassword_url() ),
-				__( 'reset your password', 'leapspark' ),
-				__( 'in order to meet current security measures.', 'leapspark' )
+				__( 'reset your password', SPARK_EXPERIENCE_PLUGIN_NAME ),
+				__( 'in order to meet current security measures.', SPARK_EXPERIENCE_PLUGIN_NAME )
 			)
 		);
 	}
