@@ -1,29 +1,25 @@
 <?php
 
+if ( ! defined( 'WPINC' ) ) {
+	die;
+}
+
+
 // Hide the WordPress logo from the admin bar
-add_action(
-	'wp_before_admin_bar_render',
-	function () {
-		global $wp_admin_bar;
-		$wp_admin_bar->remove_menu( 'wp-logo' );
-	}
-);
+add_action( 'wp_before_admin_bar_render', function () {
+	global $wp_admin_bar;
+	$wp_admin_bar->remove_menu( 'wp-logo' );
+} );
 
 // Change WordPress login page logo link
-add_filter(
-	'login_headertext',
-	function () {
-		return 'https://leapsparkagency.com';
-	}
-);
+add_filter( 'login_headertext', function () {
+	return 'https://leapsparkagency.com';
+} );
 
 // Remove WordPress link from admin footer
-add_filter(
-	'admin_footer_text',
-	function () {
-		return '';
-	}
-);
+add_filter( 'admin_footer_text', function () {
+	return '';
+} );
 
 // Change the look and feel of the login page
 add_action( 'login_enqueue_scripts', function () {
