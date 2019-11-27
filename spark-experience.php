@@ -1,13 +1,13 @@
 <?php
 /**
  * Plugin Name: Spark Experience
- * Plugin URI: https://leapsparkagency.com
+ * Plugin URI: https://github.com/leap-spark/spark-experience-wp
  * Description: Enhance WordPress,the LEAP Spark way!
- * Version: 1.3.1
+ * Version: 1.3.2
  * Author: LEAP Spark
  * Author URI: https://leapsparkagency.com
  * License: GPL2
- * Text Domain: leapspark
+ * Text Domain: spark-experience
  * Domain Path: /languages/
  *
  * @package Spark_Experience
@@ -27,7 +27,8 @@ if ( ! defined( 'WPINC' ) ) {
  * Start at version 1.0.0 and use SemVer - https://semver.org
  * Rename this for your plugin and update it as you release new versions.
  */
-define( 'SPARK_EXPERIENCE_VERSION', '1.3.1' );
+define( 'SPARK_EXPERIENCE_VERSION', '1.3.2' );
+define( 'SPARK_EXPERIENCE_PLUGIN_NAME', 'spark-experience' );
 
 require_once __DIR__ . '/includes/cleanup.php';
 require_once __DIR__ . '/includes/security.php';

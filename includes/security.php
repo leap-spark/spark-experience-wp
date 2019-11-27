@@ -10,12 +10,18 @@ namespace Spark_Experience;
 use WP_Error;
 use WP_User;
 
+if ( ! defined( 'WPINC' ) ) {
+	die;
+}
+
 if ( ! defined( 'DISALLOW_FILE_EDIT' ) ) {
 	define( 'DISALLOW_FILE_EDIT', true );
 }
 
 /**
- * Prevent users from authenticating if they are using a weak password
+ * Prevent users from authenticating if they are using a weak password. This function was taken from 10up Experience.
+ *
+ * @source https://github.com/10up/10up-experience/blob/develop/includes/authentication.php
  *
  * @param WP_User $user User object
  * @param string  $username Username
@@ -34,8 +40,8 @@ function prevent_weak_password_auth( $user, string $username, string $password )
 				'%s <a href="%s">%s</a> %s',
 				__( 'Please', 'leapspark' ),
 				esc_url( wp_lostpassword_url() ),
-				__( 'reset your password', 'leapspark' ),
-				__( 'in order to meet current security measures.', 'leapspark' )
+				__( 'reset your password', SPARK_EXPERIENCE_PLUGIN_NAME ),
+				__( 'in order to meet current security measures.', SPARK_EXPERIENCE_PLUGIN_NAME )
 			)
 		);
 	}

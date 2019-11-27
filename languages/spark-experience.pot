@@ -1,0 +1,152 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Spark Experience\n"
+"POT-Creation-Date: 2019-11-27 16:50-0500\n"
+"PO-Revision-Date: 2019-11-27 16:49-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.4\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: spark-experience.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: includes/customizer.php:20
+msgid "Login Form Style"
+msgstr ""
+
+#: includes/customizer.php:22
+msgid ""
+"Customize the login form that your admins and members see when logging in."
+msgstr ""
+
+#: includes/customizer.php:32
+msgid "Upload Logo"
+msgstr ""
+
+#: includes/customizer.php:44
+msgid "Form Background Color"
+msgstr ""
+
+#: includes/customizer.php:52
+msgid "Form Text Color"
+msgstr ""
+
+#: includes/customizer.php:64
+msgid "Button Color"
+msgstr ""
+
+#: includes/customizer.php:72
+msgid "On Hover: Button Color"
+msgstr ""
+
+#: includes/customizer.php:81
+msgid "Button Text Color"
+msgstr ""
+
+#: includes/customizer.php:89
+msgid "On Hover: Button Text Color"
+msgstr ""
+
+#: includes/customizer.php:98
+msgid "Button Border Color"
+msgstr ""
+
+#: includes/customizer.php:106
+msgid "On Hover: Button Border Color"
+msgstr ""
+
+#: includes/customizer.php:118
+msgid "Page Background Color"
+msgstr ""
+
+#: includes/security.php:41
+msgid "Please"
+msgstr ""
+
+#: includes/security.php:43
+msgid "reset your password"
+msgstr ""
+
+#: includes/security.php:44
+msgid "in order to meet current security measures."
+msgstr ""
+
+#: includes/show-template.php:58
+msgid "Theme name: "
+msgstr ""
+
+#: includes/show-template.php:58
+msgid "NOT a child theme"
+msgstr ""
+
+#: includes/show-template.php:78
+msgid "Template:"
+msgstr ""
+
+#: plugin-update-checker/Puc/v4p8/Plugin/Ui.php:54
+msgid "View details"
+msgstr ""
+
+#: plugin-update-checker/Puc/v4p8/Plugin/Ui.php:77
+#, php-format
+msgid "More information about %s"
+msgstr ""
+
+#: plugin-update-checker/Puc/v4p8/Plugin/Ui.php:128
+msgid "Check for updates"
+msgstr ""
+
+#: plugin-update-checker/Puc/v4p8/Plugin/Ui.php:213
+#, php-format
+msgctxt "the plugin title"
+msgid "The %s plugin is up to date."
+msgstr ""
+
+#: plugin-update-checker/Puc/v4p8/Plugin/Ui.php:215
+#, php-format
+msgctxt "the plugin title"
+msgid "A new version of the %s plugin is available."
+msgstr ""
+
+#: plugin-update-checker/Puc/v4p8/Plugin/Ui.php:217
+#, php-format
+msgctxt "the plugin title"
+msgid "Could not determine if updates are available for %s."
+msgstr ""
+
+#: plugin-update-checker/Puc/v4p8/Plugin/Ui.php:223
+#, php-format
+msgid "Unknown update checker status \"%s\""
+msgstr ""
+
+#: plugin-update-checker/Puc/v4p8/Vcs/PluginUpdateChecker.php:98
+msgid "There is no changelog available."
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Spark Experience"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+#. Author URI of the plugin/theme
+msgid "https://leapsparkagency.com"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Enhance WordPress,the LEAP Spark way!"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "LEAP Spark"
+msgstr ""

@@ -1,5 +1,10 @@
 <?php
 
+if ( ! defined( 'WPINC' ) ) {
+	die;
+}
+
+
 /**
  * Instant Page is a script that enables link pre-fetching. It makes the site feel faster and more responsive.
  *
