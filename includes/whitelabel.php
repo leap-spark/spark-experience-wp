@@ -56,7 +56,7 @@ add_action( 'login_enqueue_scripts', function () {
 
 			.login h1 a {
 				background-image: url('{$logo}');
-				background-size: 250px;
+				background-size: contain;
 				margin: 0 auto;
 				width: 320px;
 			}
