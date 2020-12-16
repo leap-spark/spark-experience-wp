@@ -30,8 +30,6 @@ Stuff it be doin:
 
 ### Performance
 
-- Add instant-page script for link prefetching
-
 
 ### Security
 
